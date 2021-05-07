@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@300&display=swap');
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: #f1dfd1;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    /* position:fixed; */
+}
+nav ul{
+    display: flex;
+}
+nav li a{
+    color:black;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav a img{
+    width: 30px;
+    margin-left: 20px;
+}
+nav li a:hover{
+    font-size: x-large;
+}
+
+#contactusnav{
+    background-color: rgb(241, 241, 241);
+}
+
+.icon{
+    width: 20px;
+    vertical-align:middle;
+}
+.content{
+    margin: 40px 0;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #deebdd;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    padding: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+    background-color: black;
+}
+
+.infot{
+    margin: 40px 0px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+}
+.personat img{
+    width: 200px;
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0,.5));
+}
+.social-media img{
+    width: 25px;
+}
+.personat h1{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.personat{
+    font-weight: bold;
+    line-height: 40px;
+}
+.informatat{
+    display: flex;
+    flex-direction: column;
+}
+.i1 {
+    display: flex;
+    align-items: center;
+}
+.i2 {
+    display: flex;
+}
+.i2 img{
+    vertical-align:middle;
+    margin-right: 10px;
+}
+.i1 img{
+    vertical-align:middle;
+    margin-right: 10px;
+}
+.content {
+    display: flex;
+    width: 40%;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+footer img{
+    margin: 10px;
+    width: 40px;
+}
+footer a{
+    color: white;
+}
+footer h3{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    margin-bottom: 20px;
+}
+span{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    margin: 10px 0px;
+}
+@media only screen and (max-width:1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 80%;
+        align-self: center;
+    }
+    .infot{
+        width: 80%;
+        align-self: center;
+    
+    }
+}
+@media only screen and (max-width: 885px){
+
+nav{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+    }
+nav ul{
+        display: flex;
+    }
+nav li a{
+        color:black;
+        font-size: large;
+        font-family: 'Raleway', sans-serif;
+        padding: 10px;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+nav a img{
+        width: 30px;
+        margin-left: 20px;
+    }
+nav li a:hover{
+        font-size: smaller;
+    }
+nav img{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 755px){
+    nav{ width: auto;
+        height: auto; 
+        text-align: center;
+        position: relative;
+        }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        align-items: center;
+            } 
+    nav li a{
+        display: flex;
+        flex-direction: column; 
+            } 
+}
